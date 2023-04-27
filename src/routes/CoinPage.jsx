@@ -34,7 +34,7 @@ function CoinPage() {
 
         <div className='grid md:grid-cols-2 gap-8'>
           <div>
-            <div className='flex'>
+            <div className='flex justify-between'>
               {coin.market_data?.current_price ? (
               <p className='text-3xl font-bold'>${coin.market_data.current_price.usd.toLocaleString()}</p>
               ) : null}
